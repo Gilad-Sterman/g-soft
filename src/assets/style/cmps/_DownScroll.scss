@@ -1,0 +1,25 @@
+.down-scroll {
+    // position: absolute;
+    // bottom: 10%;
+    // left: 50%;
+    z-index: 5;
+
+    a {
+        background-color: $clr-txt-g;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1rem;
+        transition: 600ms;
+
+        img {
+            transform: rotate(90deg);
+            filter: $clr-gray-filter;
+        }
+
+        &:hover {
+            transform: translateY(10px);
+        }
+    }
+}

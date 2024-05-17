@@ -1,0 +1,38 @@
+// Color variables
+$clr-primary1: rgb(11, 46, 67);
+$clr-primary: #134869;
+$clr-primary-1: #1b6898;
+$clr-dark: #191414;
+$clr-white: #ffffff;
+$clr-gray: #E6F4E9;
+$clr-gray-1: #595f60;
+$clr-dark-gray: #1b181c;
+$clr-gray-filter: invert(100%) sepia(0%) saturate(7303%) hue-rotate(2deg) brightness(108%) contrast(115%);
+$clr-bg: rgb(33, 33, 33);
+$clr-txt: rgb(255, 255, 255);
+$clr-txt-g: rgb(30, 26, 49);
+$clr-b: rgb(63, 81, 181);
+$clr-b-o: rgba(63, 81, 181, 0.304);
+$clr-b-1: rgb(47, 59, 130);
+
+// Gradient variables
+$header-grad: linear-gradient(to left, $clr-bg, $clr-b-1);
+$footer-grad: linear-gradient(to right, $clr-bg, $clr-b-1);
+$body-grad-1: linear-gradient(to right, $clr-bg, $clr-b-1);
+$body-grad-2: linear-gradient(to left, $clr-bg, $clr-b);
+$body-grad-light: linear-gradient(to right, $clr-gray, $clr-b);
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-sm: 14px;
+
+// Spacing
+$spacing-unit: 1rem;
+
+// Border radius
+$border-radius: 4px;
+$border-radius-lg: 8px;
+
+// Box shadow
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

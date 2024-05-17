@@ -1,0 +1,108 @@
+.projects {
+    padding: 2rem;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    background: $body-grad-light;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-style: italic;
+        font-size: 1rem;
+        max-width: 750px;
+        margin: auto;
+        margin-bottom: 1rem;
+        color: $clr-dark-gray;
+    }
+
+    @media (max-width: 640px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: .75rem;
+            max-width: 350px;
+            line-height: 1rem;
+        }
+    }
+
+    .project-list {
+        columns: 2;
+        width: fit-content;
+        margin: auto;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .project-item {
+            break-inside: avoid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid $clr-b;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.4s;
+
+            &:hover {
+                background-color: $clr-b-o;
+            }
+
+            .project-image {
+                width: 80%;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+                max-height: 550px;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .project-details {
+                text-align: left;
+
+                p {
+                    margin-bottom: 1rem;
+                    // font-size: .75rem;
+                    line-height: 1rem;
+                }
+
+                .project-link {
+                    display: inline-block;
+                    padding: 0.5rem 1rem;
+                    border: 1px solid $clr-b;
+                    border-radius: 4px;
+                    color: $clr-b;
+                    text-decoration: none;
+                    transition: background-color 0.2s, color 0.2s;
+
+                    &:hover {
+                        background-color: $clr-b;
+                        color: $clr-gray;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .down-scroll {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
