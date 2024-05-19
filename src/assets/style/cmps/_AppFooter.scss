@@ -76,4 +76,22 @@
             }
         }
     }
+
+    @media (max-width: 640px) {
+
+        .footer-content {
+            p {
+                text-align: center;
+            }
+        }
+
+        .footer-bottom {
+
+            nav {
+                display: none;
+            }
+
+            justify-content: center;
+        }
+    }
 }

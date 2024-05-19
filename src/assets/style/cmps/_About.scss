@@ -42,4 +42,15 @@
             }
         }
     }
+
+    @media (max-width: 640px) {
+
+        .about-content {
+            flex-direction: column;
+        }
+
+        .btn-contact {
+            margin: auto;
+        }
+    }
 }

@@ -1,6 +1,17 @@
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(-15px);
+    }
+}
+
 .hero {
     display: flex;
-    // gap: 1rem;
     padding: 1rem;
 
     .pill {
@@ -33,24 +44,30 @@
     }
 
     @media (max-width: 640px) {
+        position: relative;
+
         h3 {
             font-size: 2.5rem;
         }
 
-        h4 {
-            font-size: 1rem;
-            max-width: 350px;
+        .imgs {
+            position: absolute;
+            opacity: 0.6;
+
+            z-index: -2;
         }
 
-        .hero-img {
-            height: 650px;
+        .btn-contact {
+            margin: auto;
+            margin-top: 2rem;
+            // animation: bounce 1s ease infinite;
+            // animation-delay: 3s; // Delay before the animation starts
+            // animation-iteration-count: infinite; // The animation will loop infinitely
+            // animation-duration: 5s; // Total duration including the delay
         }
-    }
 
-    .down-scroll {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translate(-50%, -10%);
+        p {
+            color: $clr-dark-gray;
+        }
     }
 }
