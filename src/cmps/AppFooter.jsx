@@ -2,25 +2,37 @@ export function AppFooter() {
     return (
         <footer className="app-footer" id="contact">
             <div className="footer-content">
+                <p>Gilad <span>Sterman</span> <br />Creating modern, responsive websites that bring your ideas to life. <br /> &copy; 2024 Gilad Sterman. All rights reserved.</p>
                 <div className="contact-info">
-                    <h3>Contact</h3>
-                    <p>Email: <a href="mailto:your-email@example.com">g.sterman@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">+972-58-500-3431</a></p>
-                </div>
-                <div className="social-links">
-                    <h3>Follow Me</h3>
-                    <div className="links">
-                        <a href="https://github.com/Gilad-Sterman" target="_blank" rel="noopener noreferrer">
-                            <img src="https://res.cloudinary.com/dollaguij/image/upload/v1715847543/svg/github_3291695_r9nldi.png" alt="GitHub" className="social-icon" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/gilad-sterman-7b2469278/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://res.cloudinary.com/dollaguij/image/upload/v1715847533/svg/linkedin_3536505_hchtos.png" alt="LinkedIn" className="social-icon" />
-                        </a>
+                    <div className="info email">
+                        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
+                        <a href="mailto:your-email@example.com">g.sterman@gmail.com</a>
                     </div>
+                    <div className="info phone">
+                        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716119137/icons/icons8-phone-50_q2ivfp.png" alt="phone" />
+                        <a href="tel:+1234567890">+972-58-500-3431</a>
+                    </div>
+                    <button className="header-contact">
+                        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
+                        <span>Contact Me</span>
+                    </button>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; 2024 Gilad Sterman. All rights reserved.</p>
+                <nav>
+                    <a href="#projects">Projects</a>
+                    <a href="#technologies">Technologies</a>
+                    <a href="#process">Process</a>
+                    <a href="#about">About</a>
+                </nav>
+                <div className="links">
+                    <a href="https://github.com/Gilad-Sterman" target="_blank" rel="noopener noreferrer">
+                        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1715847543/svg/github_3291695_r9nldi.png" alt="GitHub" className="social-icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/gilad-sterman-7b2469278/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1715847533/svg/linkedin_3536505_hchtos.png" alt="LinkedIn" className="social-icon" />
+                    </a>
+                </div>
             </div>
         </footer>
     )

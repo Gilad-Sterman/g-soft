@@ -1,30 +1,43 @@
 .app-footer {
-    background: $footer-grad;
+    background-color: $clr-primary1;
     padding: 1rem;
-    text-align: center;
+    text-align: start;
 
     .footer-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // margin-bottom: 1.5rem;
+
+        p {
+            color: $clr-accent;
+
+            span {
+                color: $clr-secondary;
+            }
+        }
 
         @media (min-width: 768px) {
             flex-direction: row;
             justify-content: space-between;
         }
 
-        .contact-info,
-        .social-links {
+        .contact-info {
             margin-bottom: 1rem;
             display: flex;
+            gap: .5rem;
             flex-direction: column;
             align-items: start;
 
-            h3 {
-                font-size: 1.5rem;
-                margin-bottom: 0.5rem;
-                color: $clr-gray;
+            .info {
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
             }
 
             a {
@@ -34,12 +47,6 @@
                 &:hover {
                     text-decoration: underline;
                 }
-            }
-
-            .social-icon {
-                width: 32px;
-                height: 32px;
-                margin: 0 0.5rem;
             }
 
             @media (max-width: 768px) {
@@ -52,11 +59,21 @@
     .footer-bottom {
         border-top: 1px solid #ddd;
         padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
 
-        p {
-            margin: 0;
-            font-size: 0.9rem;
-            color: #ddd;
+        nav {
+            display: flex;
+            gap: 1rem;
+            color: $clr-light;
+        }
+
+        .links {
+            .social-icon {
+                width: 30px;
+                height: 30px;
+                margin: 0 0.5rem;
+            }
         }
     }
 }

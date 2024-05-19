@@ -30,7 +30,9 @@ export function Process() {
 
     return (
         <section id="process" className="process">
+            <div className="pill">Process</div>
             <h2>My Process</h2>
+            <p>From the initial consultation to project delivery and post-launch support, my process ensures a clear understanding of your needs, detailed planning, seamless execution, thorough testing, and ongoing maintenance. Each step is designed to deliver high-quality, tailored solutions.</p>
             <div className="process-steps">
                 {steps.map((step, index) => (
                     <div key={index} className="process-step" data-aos="flip-up" data-aos-duration="1000">
@@ -40,7 +42,6 @@ export function Process() {
                     </div>
                 ))}
             </div>
-            <DownScroll scrollTo={"#about"} />
         </section>
     )
 }

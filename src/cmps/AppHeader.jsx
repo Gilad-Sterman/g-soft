@@ -7,15 +7,18 @@ export function AppHeader({ selected, setSelected }) {
     return (
         <header className="app-header">
             <div className="logo" onClick={() => scrollToTop()}>
-                <img src="https://res.cloudinary.com/dollaguij/image/upload/v1715841971/svg/an-exquisite-modern-logo-design-featuring-the-inte-jRDUR9FgQu6oriC-52JpHw-ISVz9i9OSoqVjM6OWhjmug_bfw1er.jpg" alt="logo" />
+                <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716107339/logo-no-background_p7a7kq.png" alt="logo" />
             </div>
             <nav>
                 <a href="#projects">Projects</a>
                 <a href="#technologies">Technologies</a>
                 <a href="#process">Process</a>
                 <a href="#about">About</a>
-                <a href="#contact">Contact</a>
             </nav>
+            <button className="header-contact">
+                <span>Contact Me</span>
+                <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
+            </button>
         </header>
     )
 }

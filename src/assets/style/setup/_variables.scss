@@ -1,11 +1,20 @@
 // Color variables
-$clr-primary1: rgb(11, 46, 67);
+$clr-primary1: #0F0928;
 $clr-primary: #134869;
 $clr-primary-1: #1b6898;
-$clr-dark: #191414;
+$clr-secondary: #5E3BEE;
+$clr-accent: #636365;
+$clr-accent-light: #cccccc;
 $clr-white: #ffffff;
-$clr-gray: #E6F4E9;
+$clr-card1: #E0F0FC;
+$clr-card2: #FFEADE;
+$clr-card3: #EFE9FF;
+$clr-light-2: #fef5ff;
+$clr-light: #F5FBFF;
+
+$clr-dark: #191414;
 $clr-gray-1: #595f60;
+$clr-gray: #595f60;
 $clr-dark-gray: #1b181c;
 $clr-gray-filter: invert(100%) sepia(0%) saturate(7303%) hue-rotate(2deg) brightness(108%) contrast(115%);
 $clr-bg: rgb(33, 33, 33);
@@ -35,4 +44,4 @@ $border-radius: 4px;
 $border-radius-lg: 8px;
 
 // Box shadow
-$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow: 0px 22px 37.6px 0px #0F09280F;
