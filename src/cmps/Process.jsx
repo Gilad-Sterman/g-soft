@@ -41,7 +41,7 @@ export function Process() {
             <p>From the initial consultation to project delivery and post-launch support, my process ensures a clear understanding of your needs, detailed planning, seamless execution, thorough testing, and ongoing maintenance. Each step is designed to deliver high-quality, tailored solutions.</p>
             <div className="process-steps">
                 {steps.map((step, index) => (
-                    <div key={index} className="process-step" data-aos="flip-up" data-aos-duration="1000">
+                    <div key={index} className="process-step" data-aos="fade-left" data-aos-duration="1500">
                         <img src={step.icon} alt="icon" />
                         <div className="info">
                             <h3>{step.title}</h3>

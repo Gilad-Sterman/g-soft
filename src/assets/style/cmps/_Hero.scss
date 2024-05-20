@@ -45,25 +45,38 @@
 
     @media (max-width: 640px) {
         position: relative;
+        // height: 500px;
 
         h3 {
             font-size: 2.5rem;
         }
 
+        .txt {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
         .imgs {
             position: absolute;
             opacity: 0.6;
-
+            height: 100%;
             z-index: -2;
+
+            .hero-bg {
+                height: 70%;
+                transform: rotate(-120deg);
+            }
+
+            .hero-img {
+                height: 50%;
+            }
         }
 
         .btn-contact {
             margin: auto;
             margin-top: 2rem;
-            // animation: bounce 1s ease infinite;
-            // animation-delay: 3s; // Delay before the animation starts
-            // animation-iteration-count: infinite; // The animation will loop infinitely
-            // animation-duration: 5s; // Total duration including the delay
         }
 
         p {

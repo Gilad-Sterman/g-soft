@@ -24,6 +24,14 @@ function App() {
     <>
       <section className='full-Page'>
         <AppHeader />
+        <a
+          href="https://wa.me/972585003431"
+          className="whatsapp_float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
         <Hero />
         <Projects />
         <Technologies />
