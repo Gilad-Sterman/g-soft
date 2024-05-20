@@ -29,7 +29,7 @@ export function Projects({ selected, setSelected }) {
             <p>From recreating popular platforms like Spotify to developing robust inventory management systems for factory workers, my work spans various domains and industries. Utilizing a wide range of technologies, I focus on delivering high-quality, responsive, and user-friendly applications.</p>
             <div className="project-list">
                 {projects.map((project, index) => (
-                    <div key={index} className={`project-card c${index + 1}`}>
+                    <div key={index} className={`project-card c${index + 1}`} data-aos="fade-up">
                         <h3>{project.title}</h3>
                         <div className="project-details">
                             <p>{project.description}</p>
