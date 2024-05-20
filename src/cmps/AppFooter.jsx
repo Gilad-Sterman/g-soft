@@ -6,11 +6,11 @@ export function AppFooter() {
                 <div className="contact-info">
                     <div className="info email">
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
-                        <a href="mailto:your-email@example.com">g.sterman@gmail.com</a>
+                        <a href="mailto:g.sterman@gmail.com">g.sterman@gmail.com</a>
                     </div>
                     <div className="info phone">
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716119137/icons/icons8-phone-50_q2ivfp.png" alt="phone" />
-                        <a href="tel:+1234567890">+972-58-500-3431</a>
+                        <a href="tel:+972585003431">+972-58-500-3431</a>
                     </div>
                     <button className="header-contact">
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
