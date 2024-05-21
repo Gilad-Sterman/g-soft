@@ -1,13 +1,13 @@
 import { DownScroll } from "./DownScroll";
 
-export function Hero() {
+export function Hero({ showForm, setShowForm }) {
     return (
         <section className="hero">
             <div className="txt">
                 <div className="pill">Full Stack Developer</div>
                 <h3>G-Softwares</h3>
                 <p>Creating modern, responsive websites that bring your ideas to life. Explore my work and see how I can help you achieve your digital goals.</p>
-                <button className="btn-contact">
+                <button className="btn-contact" onClick={() => setShowForm(!showForm)}>
                     <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
                     <span>Contact Me</span>
                 </button>

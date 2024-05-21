@@ -1,4 +1,4 @@
-export function AppFooter() {
+export function AppFooter({ showForm, setShowForm }) {
     return (
         <footer className="app-footer" id="contact">
             <div className="footer-content">
@@ -12,7 +12,7 @@ export function AppFooter() {
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716119137/icons/icons8-phone-50_q2ivfp.png" alt="phone" />
                         <a href="tel:+972585003431">+972-58-500-3431</a>
                     </div>
-                    <button className="header-contact">
+                    <button className="header-contact" title="contact-me" onClick={() => setShowForm(!showForm)}>
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
                         <span>Contact Me</span>
                     </button>

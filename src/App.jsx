@@ -9,9 +9,12 @@ import { Projects } from './cmps/Projects'
 import { About } from './cmps/About'
 import { AppFooter } from './cmps/AppFooter'
 import { Process } from './cmps/Process'
+import { ContactForm } from './cmps/ContactForm'
 
 
 function App() {
+  const [showForm, setShowForm] = useState(false)
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -23,7 +26,7 @@ function App() {
   return (
     <>
       <section className='full-Page'>
-        <AppHeader />
+        <AppHeader showForm={showForm} setShowForm={setShowForm}/>
         <a
           href="https://wa.me/972585003431"
           className="whatsapp_float"
@@ -32,12 +35,13 @@ function App() {
         >
           <i className="fa fa-whatsapp whatsapp-icon"></i>
         </a>
-        <Hero />
+        <Hero showForm={showForm} setShowForm={setShowForm}/>
         <Projects />
         <Technologies />
         <Process />
-        <About />
-        <AppFooter />
+        <About showForm={showForm} setShowForm={setShowForm}/>
+        <AppFooter showForm={showForm} setShowForm={setShowForm}/>
+        {showForm && <ContactForm showForm={showForm} setShowForm={setShowForm} />}
       </section>
     </>
   )

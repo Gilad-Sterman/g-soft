@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function AppHeader() {
+export function AppHeader({ showForm, setShowForm }) {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -12,7 +12,7 @@ export function AppHeader() {
         ev.stopPropagation()
         setMenuOpen(!menuOpen)
     }
-    
+
     function closeMenu() {
         setMenuOpen(false)
     }
@@ -27,12 +27,12 @@ export function AppHeader() {
                 <a href="#technologies">Technologies</a>
                 <a href="#process">Process</a>
                 <a href="#about">About</a>
-                <button className="header-contact mobile">
+                <button className="header-contact mobile" onClick={() => setShowForm(!showForm)}>
                     <span>Contact Me</span>
                     <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
                 </button>
             </nav>
-            <button className="header-contact">
+            <button className="header-contact" onClick={() => setShowForm(!showForm)}>
                 <span>Contact Me</span>
                 <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
             </button>

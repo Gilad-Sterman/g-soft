@@ -1,0 +1,39 @@
+.contact-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $clr-primary;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: $box-shadow;
+    min-width: 350px;
+    
+    .btn-close {
+        padding: .5rem;
+        background-color: $clr-primary-1;
+
+        img {
+            width: 1rem;
+            height: 1rem;
+            filter: $clr-gray-filter;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        color: $clr-white;
+
+        h4 {
+            color: $clr-white;
+        }
+
+        input {
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            border: none;
+        }
+    }
+}
