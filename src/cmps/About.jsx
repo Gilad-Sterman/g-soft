@@ -6,7 +6,7 @@ export function About({ showForm, setShowForm }) {
                 <div className="about-text" data-aos="zoom-in">
                     <h4>Full Stack developer with experience in delivering quality products</h4>
                     <p>
-                        I'm Gilad Sterman, a passionate web developer with a strong background in full-stack web development. I recently completed an intensive bootcamp where I mastered HTML, CSS, SCSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and more. During this time, I built several projects, including a full end-to-end recreation of Spotify. My expertise spans frontend and backend development, allowing me to create comprehensive and seamless web applications. I am dedicated to continuous learning and am always looking for new challenges to tackle.
+                        I'm Gilad Sterman, a passionate web developer with a strong background in full-stack web development. I completed an intensive bootcamp through Coding Academy Israel, where I mastered HTML, CSS, SCSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and more. During this time, I built several projects, including a full end-to-end recreation of Spotify. My expertise spans frontend and backend development, allowing me to create comprehensive and seamless web applications. I am dedicated to continuous learning and am always looking for new challenges to tackle.
                     </p>
                     <button className="btn-contact" title="contact-me" onClick={() => setShowForm(!showForm)}>
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />

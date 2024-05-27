@@ -11,9 +11,9 @@
         p {
             color: $clr-accent;
 
-            span {
-                color: $clr-secondary;
-            }
+            // span {
+            //     color: $clr-white;
+            // }
         }
 
         @media (min-width: 768px) {
