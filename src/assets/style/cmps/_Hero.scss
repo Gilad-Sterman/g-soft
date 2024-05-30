@@ -11,7 +11,8 @@
 }
 
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding: 1rem;
 
     .pill {
@@ -43,7 +44,13 @@
         }
     }
 
+    p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
     @media (max-width: 640px) {
+        display: flex;
         position: relative;
         // height: 500px;
 
@@ -81,6 +88,7 @@
 
         p {
             color: $clr-dark-gray;
+            font-size: 1rem;
         }
     }
 }

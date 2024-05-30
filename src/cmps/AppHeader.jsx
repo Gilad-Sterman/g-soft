@@ -20,7 +20,7 @@ export function AppHeader({ showForm, setShowForm }) {
     return (
         <header className="app-header" onClick={closeMenu}>
             <div className="logo" onClick={() => scrollToTop()}>
-                <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716107339/logo-no-background_p7a7kq.png" alt="logo" />
+                <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716983764/logo4_notxt.jpg" alt="logo" />
             </div>
             <nav className={menuOpen ? 'open' : ''}>
                 <a href="#projects">Projects</a>

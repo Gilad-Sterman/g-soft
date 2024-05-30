@@ -4,8 +4,8 @@
     min-height: 650px;
 
     .about-content {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
         gap: 1rem;
         align-items: center;
 
@@ -24,12 +24,12 @@
             p {
                 font-size: 1rem;
                 line-height: 1.5;
+                text-align: justify;
             }
 
-            @media (max-width: 640px) {
-                text-align: justify;
-                padding-inline: 0;
-            }
+            // @media (max-width: 640px) {
+            //     padding-inline: 0;
+            // }
         }
 
         .imgs {
@@ -46,6 +46,7 @@
     @media (max-width: 640px) {
 
         .about-content {
+            display: flex;
             flex-direction: column;
         }
 
