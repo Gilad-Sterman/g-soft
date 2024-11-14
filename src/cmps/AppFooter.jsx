@@ -6,7 +6,7 @@ export function AppFooter({ showForm, setShowForm }) {
                 <div className="contact-info">
                     <div className="info email">
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716108050/icons8-email-50_k3jpwc.png" alt="email" />
-                        <a href="mailto:g.sterman@gmail.com">g.sterman@gmail.com</a>
+                        <a href="mailto:g.sterman@gmail.com">g.sterman.cp@gmail.com</a>
                     </div>
                     <div className="info phone">
                         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1716119137/icons/icons8-phone-50_q2ivfp.png" alt="phone" />
